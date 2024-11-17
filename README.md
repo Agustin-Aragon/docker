@@ -20,6 +20,12 @@ Las credenciales para poder ingresar son:
     password=aragon  
 Si da error al ingresar las credenciales solamente tenemos que esperar un poco más hasta que se termine de crear e inicializar los contenedores  
 Importamos la base de datos que se encuentra en ./mysql/mysql-contenedor.sql  
+![Captura de pantalla de 2024-11-17 03-22-04](https://github.com/user-attachments/assets/89fc29f5-9454-48ee-96ce-6098cc66b908)
+![Captura de pantalla de 2024-11-17 03-22-30](https://github.com/user-attachments/assets/f3866633-db4b-423e-bbfe-89f3fe7f2183)
+![Captura de pantalla de 2024-11-17 03-22-40](https://github.com/user-attachments/assets/89f1f90f-ac20-4480-910b-2ff430997294)
+![Captura de pantalla de 2024-11-17 03-32-35](https://github.com/user-attachments/assets/62b0bb31-b5a1-4279-95e6-4f1fe2ff1e96)
+![Captura de pantalla de 2024-11-17 03-32-46](https://github.com/user-attachments/assets/c30b8216-89a5-4778-9556-4775708d835b)
+
 
 ### 4. Inicializa el contenedor de la aplicación
 Una vez tengamos la base de datos importada tenemos que iniciar el contenedor de la aplicacion con el siguiente comando:  
