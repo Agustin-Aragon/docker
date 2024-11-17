@@ -36,3 +36,4 @@ O desde docker desktop vamos a containers y en node-contenedor le damos al icono
 Cuando el contenedor este en funcionamiento accedemos a la siguiente url:  
     localhost:3000  
 Si todo salió bien tendriamos que poder ver la aplicación funcionando
+![Captura de pantalla de 2024-11-17 03-39-21](https://github.com/user-attachments/assets/a581c7aa-08dd-4782-85e7-04c2339aa2cf)
