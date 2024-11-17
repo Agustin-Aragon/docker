@@ -1,0 +1,49 @@
+services:
+
+  mysql:
+    build:
+      context: ./mysql
+      dockerfile: Dockerfile
+    image: agustin-mysql:latest
+    container_name: mysql-contenedor
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: aragon
+    volumes:
+      - mysql-datos:/var/lib/mysql
+    networks:
+      - agustin-red
+
+  node:
+    build:
+      context: ./node
+      dockerfile: Dockerfile
+    image: agustin-node:latest
+    container_name: node-contenedor
+    ports:
+      - "3000:3000"
+    networks:
+      - agustin-red
+
+  phpmyadmin:
+    build:
+      context: ./phpmyadmin
+      dockerfile: Dockerfile
+    image: agustin-phpmyadmin:latest
+    container_name: phpmyadmin-contenedor
+    environment:
+      PMA_HOST: mysql-contenedor
+    ports:
+      - "8080:80"
+    networks:
+      - agustin-red
+
+networks:
+  agustin-red:
+    driver: bridge
+    name: agustin-red
+
+volumes:
+  mysql-datos:
+    name: mysql-datos
